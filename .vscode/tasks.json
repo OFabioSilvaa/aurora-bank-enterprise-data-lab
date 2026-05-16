@@ -1,0 +1,48 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "DuckDB: Run current SQL file",
+            "type": "shell",
+            "command": "python",
+            "args": [
+                ".\\scripts\\run_sql_file.py",
+                "${file}"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": [],
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": true,
+                "panel": "dedicated",
+                "clear": true
+            }
+        },
+        {
+            "label": "DuckDB: Test database connection",
+            "type": "shell",
+            "command": "python",
+            "args": [
+                ".\\scripts\\00_debug_duckdb_connection.py"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "problemMatcher": [],
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": true,
+                "panel": "dedicated",
+                "clear": true
+            }
+        }
+    ]
+}

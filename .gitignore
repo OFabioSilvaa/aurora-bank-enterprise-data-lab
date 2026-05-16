@@ -1,0 +1,35 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.venv/
+venv/
+
+# Databases
+database/*.duckdb
+database/*.wal
+*.db
+*.sqlite
+
+# Data files
+data/bronze/*
+data/silver/*
+data/sdx/*
+data/gold/*
+data/exports_excel/*
+data/postgres_exports/*
+*.csv
+*.parquet
+*.xlsx
+
+# Secrets
+.env
+*.env
+secrets.*
+credentials.*
+
+# OS / Editor
+.DS_Store
+Thumbs.db
+.vscode/settings.json

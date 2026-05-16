@@ -1,0 +1,27 @@
+<svg width="1400" height="520" viewBox="0 0 1400 520" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="g" x1="0" x2="1" y1="0" y2="1">
+      <stop stop-color="#102A43" offset="0"/>
+      <stop stop-color="#2563EB" offset="0.55"/>
+      <stop stop-color="#10B981" offset="1"/>
+    </linearGradient>
+  </defs>
+  <rect width="1400" height="520" rx="36" fill="#F8FAFC"/>
+  <rect x="40" y="40" width="1320" height="440" rx="30" fill="url(#g)"/>
+  <circle cx="1160" cy="120" r="150" fill="#D4A43B" opacity="0.18"/>
+  <circle cx="1030" cy="330" r="210" fill="#FFFFFF" opacity="0.08"/>
+  <path d="M90 370 C260 260, 420 310, 560 230 S900 210, 1320 110" fill="none" stroke="#FFFFFF" stroke-width="10" opacity="0.45"/>
+  <text x="100" y="150" font-family="Inter, Arial, sans-serif" font-size="62" font-weight="800" fill="#FFFFFF">Aurora Bank</text>
+  <text x="100" y="220" font-family="Inter, Arial, sans-serif" font-size="34" font-weight="500" fill="#DDEBFF">Enterprise Data Lab</text>
+  <text x="100" y="292" font-family="Inter, Arial, sans-serif" font-size="28" fill="#F8FAFC">Data Warehouse bancário fictício para SQL, BI, Engenharia de Dados e Analytics</text>
+  <rect x="100" y="340" width="210" height="52" rx="26" fill="#FFFFFF" opacity="0.18"/>
+  <text x="132" y="375" font-family="Inter, Arial, sans-serif" font-size="22" fill="#FFFFFF">PostgreSQL</text>
+  <rect x="330" y="340" width="160" height="52" rx="26" fill="#FFFFFF" opacity="0.18"/>
+  <text x="365" y="375" font-family="Inter, Arial, sans-serif" font-size="22" fill="#FFFFFF">DuckDB</text>
+  <rect x="510" y="340" width="120" height="52" rx="26" fill="#FFFFFF" opacity="0.18"/>
+  <text x="548" y="375" font-family="Inter, Arial, sans-serif" font-size="22" fill="#FFFFFF">SQL</text>
+  <rect x="650" y="340" width="150" height="52" rx="26" fill="#FFFFFF" opacity="0.18"/>
+  <text x="682" y="375" font-family="Inter, Arial, sans-serif" font-size="22" fill="#FFFFFF">Python</text>
+  <rect x="820" y="340" width="180" height="52" rx="26" fill="#FFFFFF" opacity="0.18"/>
+  <text x="858" y="375" font-family="Inter, Arial, sans-serif" font-size="22" fill="#FFFFFF">Analytics</text>
+</svg>

@@ -1,0 +1,52 @@
+project:
+  name: "Aurora Bank Enterprise Data Lab"
+  bank_name: "Aurora Bank"
+  version: "v1"
+  environment: "local"
+
+scale:
+  mode: "growth"
+  customers: 7000000
+  history_start: "2020-01-01"
+  history_end: "2026-12-31"
+
+storage:
+  database_path: "database/aurora_bank.duckdb"
+  bronze_path: "data/bronze"
+  silver_path: "data/silver"
+  sdx_path: "data/sdx"
+  gold_path: "data/gold"
+  exports_excel_path: "data/exports_excel"
+
+generation_modes:
+  dev:
+    customers: 10000
+    description: "Modo pequeno para testar scripts rapidamente."
+  lab:
+    customers: 100000
+    description: "Modo intermediário para estudo local."
+  growth:
+    customers: 7000000
+    description: "Escala oficial conceitual do banco."
+  enterprise:
+    customers: 15000000
+    description: "Escala futura pesada."
+
+business:
+  products:
+    - conta_digital
+    - cartao_credito
+    - emprestimo_pessoal
+    - emprestimo_consignado
+    - portabilidade
+    - credito_imobiliario
+    - consorcio
+    - investimentos
+    - seguros
+
+data_quality:
+  inject_nulls: true
+  inject_duplicates: true
+  inject_orphan_keys: true
+  inject_inconsistent_dates: true
+  inject_status_mismatch: true

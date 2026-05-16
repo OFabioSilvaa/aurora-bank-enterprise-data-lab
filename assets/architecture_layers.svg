@@ -1,0 +1,63 @@
+<svg width="1400" height="780" viewBox="0 0 1400 780" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1400" height="780" fill="#F8FAFC"/>
+  <text x="60" y="70" font-family="Inter, Arial" font-size="42" font-weight="800" fill="#102A43">Arquitetura Analítica — Aurora Bank V1</text>
+  <text x="60" y="112" font-family="Inter, Arial" font-size="22" fill="#334155">Fluxo principal: DuckDB/Parquet → PostgreSQL → BI/Excel/Analytics</text>
+
+  <g transform="translate(60,160)">
+    <rect width="240" height="440" rx="22" fill="#EAF2FF" stroke="#2563EB" stroke-width="3"/>
+    <text x="26" y="54" font-family="Inter, Arial" font-size="28" font-weight="800" fill="#2563EB">Bronze</text>
+    <text x="26" y="92" font-family="Inter, Arial" font-size="17" fill="#334155">Dados sintéticos brutos</text>
+    <text x="26" y="140" font-family="Inter, Arial" font-size="16" fill="#102A43">• Clientes</text>
+    <text x="26" y="170" font-family="Inter, Arial" font-size="16" fill="#102A43">• Contas</text>
+    <text x="26" y="200" font-family="Inter, Arial" font-size="16" fill="#102A43">• Transações</text>
+    <text x="26" y="230" font-family="Inter, Arial" font-size="16" fill="#102A43">• Cartões</text>
+    <text x="26" y="260" font-family="Inter, Arial" font-size="16" fill="#102A43">• Crédito</text>
+    <text x="26" y="290" font-family="Inter, Arial" font-size="16" fill="#102A43">• Parquet/DuckDB</text>
+  </g>
+
+  <path d="M330 380 L410 380" stroke="#94A3B8" stroke-width="8" marker-end="url(#arrow)"/>
+  <defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#94A3B8"/></marker></defs>
+
+  <g transform="translate(420,160)">
+    <rect width="240" height="440" rx="22" fill="#ECFDF5" stroke="#10B981" stroke-width="3"/>
+    <text x="26" y="54" font-family="Inter, Arial" font-size="28" font-weight="800" fill="#10B981">Silver</text>
+    <text x="26" y="92" font-family="Inter, Arial" font-size="17" fill="#334155">Dados tratados</text>
+    <text x="26" y="140" font-family="Inter, Arial" font-size="16" fill="#102A43">• clientes</text>
+    <text x="26" y="170" font-family="Inter, Arial" font-size="16" fill="#102A43">• contratos_credito</text>
+    <text x="26" y="200" font-family="Inter, Arial" font-size="16" fill="#102A43">• cartoes</text>
+    <text x="26" y="230" font-family="Inter, Arial" font-size="16" fill="#102A43">• portabilidade</text>
+    <text x="26" y="260" font-family="Inter, Arial" font-size="16" fill="#102A43">• crm</text>
+    <text x="26" y="290" font-family="Inter, Arial" font-size="16" fill="#102A43">• cobrança</text>
+  </g>
+
+  <path d="M690 380 L770 380" stroke="#94A3B8" stroke-width="8" marker-end="url(#arrow)"/>
+
+  <g transform="translate(780,160)">
+    <rect width="240" height="440" rx="22" fill="#F3E8FF" stroke="#7C3AED" stroke-width="3"/>
+    <text x="26" y="54" font-family="Inter, Arial" font-size="28" font-weight="800" fill="#7C3AED">SDX</text>
+    <text x="26" y="92" font-family="Inter, Arial" font-size="17" fill="#334155">Camada semântica</text>
+    <text x="26" y="140" font-family="Inter, Arial" font-size="16" fill="#102A43">• cliente_360_v8</text>
+    <text x="26" y="170" font-family="Inter, Arial" font-size="16" fill="#102A43">• churn_features</text>
+    <text x="26" y="200" font-family="Inter, Arial" font-size="16" fill="#102A43">• funil_credito</text>
+    <text x="26" y="230" font-family="Inter, Arial" font-size="16" fill="#102A43">• segmentacao_crm</text>
+    <text x="26" y="260" font-family="Inter, Arial" font-size="16" fill="#102A43">• risco_credito</text>
+    <text x="26" y="290" font-family="Inter, Arial" font-size="16" fill="#102A43">• cobrança_cliente</text>
+  </g>
+
+  <path d="M1050 380 L1130 380" stroke="#94A3B8" stroke-width="8" marker-end="url(#arrow)"/>
+
+  <g transform="translate(1140,160)">
+    <rect width="220" height="440" rx="22" fill="#FFF7ED" stroke="#D4A43B" stroke-width="3"/>
+    <text x="26" y="54" font-family="Inter, Arial" font-size="28" font-weight="800" fill="#B7791F">Gold</text>
+    <text x="26" y="92" font-family="Inter, Arial" font-size="17" fill="#334155">Consumo e BI</text>
+    <text x="26" y="140" font-family="Inter, Arial" font-size="16" fill="#102A43">• kpi_executivo</text>
+    <text x="26" y="170" font-family="Inter, Arial" font-size="16" fill="#102A43">• visão_cliente</text>
+    <text x="26" y="200" font-family="Inter, Arial" font-size="16" fill="#102A43">• dw_contratacao</text>
+    <text x="26" y="230" font-family="Inter, Arial" font-size="16" fill="#102A43">• dw_churn</text>
+    <text x="26" y="260" font-family="Inter, Arial" font-size="16" fill="#102A43">• dw_cobranca</text>
+    <text x="26" y="290" font-family="Inter, Arial" font-size="16" fill="#102A43">• dashboard_base</text>
+  </g>
+
+  <rect x="60" y="650" width="1300" height="74" rx="24" fill="#102A43"/>
+  <text x="90" y="696" font-family="Inter, Arial" font-size="22" fill="#FFFFFF">Meta: quality checks e validações de consistência • Projeto 100% fictício com dados sintéticos</text>
+</svg>
